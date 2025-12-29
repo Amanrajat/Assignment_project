@@ -11,6 +11,7 @@ class User_Model(models.Model):
 class Product_Model(models.Model):
     name = models.CharField(max_length=100)
     price = models.FloatField()
+    quantity = models.IntegerField(default=0)
     def __str__(self):
         return self.name
 

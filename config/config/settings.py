@@ -76,20 +76,30 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'users.db',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'user_db',
+        'USER': 'root',
+        'PASSWORD': 'Aman123',
+        'HOST': 'localhost',
+        'PORT': '3306',
     },
-
 
     'products_db': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'products.db',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'products_db',
+        'USER': 'root',
+        'PASSWORD': 'Aman123',
+        'HOST': 'localhost',
+        'PORT': '3306',
     },
 
-
     'orders_db': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'orders.db',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'orders_db',
+        'USER': 'root',
+        'PASSWORD': 'Aman123',
+        'HOST': 'localhost',
+        'PORT': '3306',
     },
 }
 
